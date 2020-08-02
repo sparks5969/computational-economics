@@ -1,0 +1,218 @@
+
+body{
+    background-color:FFFFFF;
+}
+
+.container{
+    width:90%;
+    height:85%;
+    background: #F0F0F0;
+    margin: auto;
+    position:relative;
+    top:10px;
+    overflow:auto;
+    border-width: 1px;
+    border-color: #000000;
+    padding_border-bottom: 20px;
+}
+
+
+.lefttop{
+height:80px;
+width: 30%;
+position:fixed;
+display: block;
+background-color: #0075B3;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 24px;
+color:#FFFFFF;
+text-align: center;
+line-height:80px;
+border-style: solid;
+border-width: 1px;
+border-color: #000000;
+}
+
+
+.righttop{
+margin-left: 30%; /* Same as the width of the sidenav */
+font-size: 20px; /* Increased text to enable scrolling */
+width: 60%;
+height: 80px; /*same as the height of .lefttop*/
+position:fixed;
+display: block;
+background-color: #F0F0F0;
+font-size: 24px;
+font-family: Verdana, Geneva, sans-serif;
+font-weight: bold;
+color:#0075B3;
+text-align: center;
+line-height:80px;
+border-style: solid;
+border-width: 1px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 700px; /* fixed position can scoll to the bottom, DO NOT USE 100%*/
+  width: 30%;
+  position: fixed;
+  z-index: -1;
+  top: 92px; /* top equal to .lefttop heigh+ container top margint*/
+  background-color: #F0F0F0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border:none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  overflow-y: scroll;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #000000;
+}
+
+/* Main content */
+.maintext {
+  margin-left: 30%; /* Same as the width of the sidenav */
+  height: 600px;
+  width: 50%;
+
+  background-color:#FFFFFF;
+  font-size: 20px; /* Increased text to enable scrolling */
+  position:fixed;
+  display: block;
+  top: 92px; /* top equal to .righttop height + container top margin*/
+  position:fixed;
+  overflow-y: scroll;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top:5%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #8DAED7;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #D5DFF6;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.coding_block{
+  font-family: "Lato", sans-serif;
+  border-left: 6px solid blue;
+  background-color: #D8EBE6;
+  color: #533d7d;
+  padding-top:12px;
+  padding-left: 10px;
+  padding-bottom: 12px;
+  margin-left: 5%;
+  margin-right:5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+.maintext h1,h2,h3,h4,h5,h6 {
+    padding-right:10px;
+    padding-top:10px;
+}
+
+
+h1{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:24px;
+    padding-top:0px;
+}
+
+h2{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:22x;
+    padding-top:22px;
+    font-weight:bold;
+    color:#0075B3;
+}
+
+p {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:16px;
+  padding-top:12px;
+  line-height: 1.5;
+}
+
+ul.item{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:16px;
+    line-height:150%;
+
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    list-style-type: circle;
+}
+
+footer{
+    position:fixed;
+    margin-left: 0%; /* Same as the width of the sidenav */
+    margin-top:790px;
+    margin-bottom: 10%;
+    font-size: 20px; /* Increased text to enable scrolling */
+    width: 90%;
+    height: 20px; /*same as the height of .lefttop*/;
+    background-color:#0075B3;
+    float:left;
+    z-index: 1;
+    color:#E3E3E3;
+    text-align: right;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:small;
+    border-style: solid;
+    border-width: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+footer a {
+    padding-right:20px;
+    vertical-align:middle;
+}

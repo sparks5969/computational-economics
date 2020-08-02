@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" href="../style/reset.css"/>
+<link rel="stylesheet" href ="../style/style3.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+
+<div class="lefttop">
+Computational Economics
+</div>
+
+
+
+<div class="sidenav">
+  <button class="dropdown-btn">Course Overview
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../index.html">Course Description</a>
+    <a href="#">Schedule</a>
+    <a href="#"> Download Syllabus</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 1: Introduction
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1-1</a>
+    <a href="#">Link 1-2</a>
+    <a href="#section3">Link 1-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 2: Gale-Shapley Algorithm
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 2-1</a>
+    <a href="#">Link 2-2</a>
+    <a href="#">Link 2-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn"> Module 3: COVID-19 Pandemic Simulation
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 3-1</a>
+    <a href="#">Link 3-2</a>
+    <a href="#">Link 3-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 4: Objected Oriented Programming
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 4-1</a>
+    <a href="#">Link 4-2</a>
+    <a href="#">Link 4-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 5: Public Goods and Cooperation
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 5-1</a>
+    <a href="#">Link 5-2</a>
+    <a href="#">Link 5-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 6: Schelling's Segregation Model
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 6-1</a>
+    <a href="#">Link 6-2</a>
+    <a href="#">Link 6-3</a>
+  </div>
+  <br></br>
+
+  <button class="dropdown-btn">Module 7: Solow's Growth Model
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 7-1</a>
+    <a href="#">Link 7-2</a>
+    <a href="#">Link 7-3</a>
+  </div>
+  <br></br>
+</div><!--end of sidenav-->
+
+<div class="righttop">
+Module 1: Gale-Shapley Algorithm
+</div>
+
+
+<div class="maintext">
+  <h2>Topline here</h2>
+  <p>a subtitle.</p>
+  <p>a descriptive paragraph</p>
+  <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim. In porttitor sem id velit lobortis aliquam. Duis et purus ac orci porttitor luctus at quis leo. Mauris vulputate pellentesque est, sit amet egestas tellus facilisis sit amet. Cras sodales bibendum tellus, a gravida tortor hendrerit sed. Pellentesque blandit posuere nisl, sit amet cursus nisl dignissim non.
+Vivamus at orci sit amet elit lacinia posuere sit amet malesuada elit. Duis quis luctus magna. Phasellus pharetra urna a dolor vulputate ultrices. Nam ornare orci justo, et fringilla lacus. Etiam tristique enim sed enim tempus tincidunt. Fusce rutrum dui at erat iaculis suscipit. Aenean id urna sit amet arcu pulvinar accumsan. Aenean malesuada, nisi sed ultricies tempus, elit nisl interdum leo, sit amet bibendum eros arcu pretium nisi. Nam magna dolor, lacinia adipiscing iaculis ac, viverra sit amet ligula. Fusce vitae est sit amet ipsum iaculis molestie a ac nisi. Curabitur porta nunc quis magna interdum nec hendrerit ligula suscipit. Curabitur non accumsan sapien. Donec non ligula a lorem lobortis scelerisque ac a sem. Sed porta blandit odio a ullamcorper.
+</p>
+
+<div class="coding_block">
+  <p>import numpy as np </p>
+  <p>import pandas as pd </p>
+</div>
+
+
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" href="../style/reset.css"/>
+<link rel="stylesheet" href ="../style/style3.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="lefttop">
+  Computational Economics
+  </div> <!-- end of leftop-->
+
+  <div class="sidenav">
+    <button class="dropdown-btn">Course Overview
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../index.html#description">Course Description</a>
+      <a href="#">Schedule</a>
+      <a href="#"> Download Syllabus</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 1: Introduction
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href= "module1.html#link1">Link 1-1</a>
+      <a href="#">Link 1-2</a>
+      <a href="#section3">Link 1-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 2: Gale-Shapley Algorithm
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 2-1</a>
+      <a href="#">Link 2-2</a>
+      <a href="#">Link 2-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn"> Module 3: COVID-19 Pandemic Simulation
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 3-1</a>
+      <a href="#">Link 3-2</a>
+      <a href="#">Link 3-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 4: Objected Oriented Programming
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 4-1</a>
+      <a href="#">Link 4-2</a>
+      <a href="#">Link 4-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 5: Public Goods and Cooperation
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 5-1</a>
+      <a href="#">Link 5-2</a>
+      <a href="#">Link 5-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 6: Schelling's Segregation Model
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 6-1</a>
+      <a href="#">Link 6-2</a>
+      <a href="#">Link 6-3</a>
+    </div>
+    <br></br>
+
+    <button class="dropdown-btn">Module 7: Solow's Growth Model
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 7-1</a>
+      <a href="#">Link 7-2</a>
+      <a href="#">Link 7-3</a>
+    </div>
+    <br></br>
+
+  </div> <!--end of div sidenav-->
+
+
+  <div class="righttop">
+  Module 1: Gale-Shapley Algorithm
+  </div>
+
+
+  <div class="maintext">
+    <h2 id=link1>link 1</h2>
+    <p>text</p>
+    <p>more text</p>
+    <p>and more text</p>
+    <p></p>
+    <h2>Link 2</h2>
+
+    <p></p>
+    <p></p>
+    <h2>link3</h2>
+    <p></p>
+    <p></p>
+
+  <p></p>
+  <p></p>
+  <p></p>
+</div> <!--end of maintext -->
+
+<footer>
+  <a>Econ 380 Computational Economics</a>
+</footer>
+
+</div>  <!--end of container -->
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+
+
+
+
+</html>
